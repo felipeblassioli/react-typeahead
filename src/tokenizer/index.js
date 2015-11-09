@@ -4,8 +4,7 @@
 
 var React = require('react');
 var Token = require('./token');
-var KeyEvent = require('../keyevent');
-var Typeahead = require('../typeahead');
+var KeyEvent = require('../keyevent'); var Typeahead = require('../typeahead');
 var classNames = require('classnames');
 
 function _arraysAreDifferent(array1, array2) {
@@ -176,7 +175,9 @@ var TypeaheadTokenizer = React.createClass({
     var classes = {};
     classes[this.props.customClasses.typeahead] = !!this.props.customClasses.typeahead;
     var classList = classNames(classes);
-    var tokenizerClasses = [this.props.defaultClassNames && "typeahead-tokenizer"];
+
+    var tokenizerClasses = {};
+	tokenizerClasses["typeahead-tokenizer"] = this.props.defaultClassNames;
     tokenizerClasses[this.props.className] = !!this.props.className;
     var tokenizerClassList = classNames(tokenizerClasses)
 
