@@ -103,6 +103,7 @@ var Typeahead = React.createClass({
     if (this.props.maxVisible) {
       result = result.slice(0, this.props.maxVisible);
     }
+	console.log('getOptionsForValue: value=',value, result);
     return result;
   },
 
