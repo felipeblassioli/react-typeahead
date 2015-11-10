@@ -133,14 +133,14 @@ var Typeahead = React.createClass({
 
   _renderIncrementalSearchResults: function() {
     // Nothing has been entered into the textbox
-    if (!this.state.entryValue) {
+    /*if (!this.state.entryValue) {
       return "";
     }
 
     // Something was just selected
     if (this.state.selection) {
       return "";
-    }
+    }*/
 
     return (
       <this.props.customListComponent
